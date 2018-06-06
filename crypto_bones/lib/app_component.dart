@@ -1,5 +1,13 @@
 
 import 'package:flutter/material.dart';
+import 'package:fluro/fluro.dart';
+
+
+import 'Application.dart';
+import 'helper/localisation/translations_delegate.dart';
+import 'helper/route/routes.dart';
+import 'ui/theme/theme_config.dart';
+
 
 
 class AppComponent extends StatefulWidget {
@@ -19,7 +27,7 @@ class AppComponentState extends State<AppComponent> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-        home: new SplashScreen(),
+        home: new HomeScreen(),
         title: "Enjoy Showcase",
         localizationsDelegates: [
           const TranslationsDelegate(),
