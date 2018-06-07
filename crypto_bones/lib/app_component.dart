@@ -1,14 +1,12 @@
-
 import 'package:flutter/material.dart';
 import 'package:fluro/fluro.dart';
-
 
 import 'Application.dart';
 import 'helper/localisation/translations_delegate.dart';
 import 'helper/route/routes.dart';
+import 'ui/splash_screen/home_view.dart';
 import 'ui/theme/theme_config.dart';
-
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class AppComponent extends StatefulWidget {
   @override
@@ -27,7 +25,7 @@ class AppComponentState extends State<AppComponent> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-        home: new HomeScreen(),
+        home: new HomeView(),
         title: "Enjoy Showcase",
         localizationsDelegates: [
           const TranslationsDelegate(),
